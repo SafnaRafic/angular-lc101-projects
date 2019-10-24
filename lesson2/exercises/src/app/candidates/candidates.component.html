@@ -23,9 +23,10 @@
     
         <div class="centered col-3">
             <h2>Sidekick</h2>
-            
+            <p *ngIf="selected">
             <!-- Use *ngIf and the correct placeholder to display a sidekick's image -->
-            <img src="{{placeholder}}" alt="OOPS! No image available."/>
+            <img src="{{selected.image}}" alt="OOPS! No image available."/>
+            </p>
         </div>
 
         <div class="crew col-3">
